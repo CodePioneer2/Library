@@ -1,11 +1,11 @@
-*{
-    padding: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 #new-book-button,
@@ -22,6 +22,7 @@ body{
 }
 #close-form-button,
 input[type='submit'] {
+  cursor: pointer;
   padding: 10px;
   font-size: 1rem;
   background-color: #000;
@@ -64,4 +65,26 @@ input[type='checkbox'] {
   border: 2px solid #ccc;
   cursor: pointer;
   border-radius: 5px;
+}
+
+#cards {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+  gap: 30px;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+#cards div {
+  flex: 0 1 300px;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #9281;
+  text-transform: uppercase;
+  flex-grow: 0;
+}
+
+#cards div:last-child {
+  border: 3px solid rgb(255, 64, 0);
 }
